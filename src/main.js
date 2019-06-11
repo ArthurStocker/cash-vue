@@ -1,14 +1,15 @@
-import Vue from "vue";
-import './plugins/bootstrap-vue'
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
-import "./registerServiceWorker";
+import Vue from 'vue'
+import '@/plugins/bootstrap-vue.js'
+import app from '@/App.vue'
+import store from '@/store.js'
+import router from '@/router.js'
+import '@/registerFontAwsome.js'
+import '@/registerServiceWorker.js'
 
-Vue.config.productionTip = false;
+Vue.config.productionTip = false
 
 new Vue({
-  router,
   store,
-  render: h => h(App)
-}).$mount("#app");
+  router,
+  render: h => h(app)
+}).$mount('#app')
